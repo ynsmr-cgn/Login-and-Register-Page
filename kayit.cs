@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -21,8 +21,10 @@ namespace LoginPage
             InitializeComponent();
         }
 
+        // Instance of loginClasses
         loginClasses c = new loginClasses();
 
+        // Validate email format
         private void txtboxMail_Validating(object sender, CancelEventArgs e)
         {
             string email = txtboxMail.Text;
@@ -33,6 +35,7 @@ namespace LoginPage
             }
         }
 
+        // Check if email is valid
         private bool IsValidEmail(string email)
         {
             try
@@ -46,16 +49,19 @@ namespace LoginPage
             }
         }
 
+        // Close button click event
         private void pictureClose_Click(object sender, EventArgs e)
         {
             this.Close();
         }
 
+        // Minimize button click event
         private void pictureBehind_Click(object sender, EventArgs e)
         {
             WindowState = FormWindowState.Minimized;
         }
 
+        // Clear textboxes
         public void Clear()
         {
             txtboxisim.Text = string.Empty;
@@ -71,6 +77,7 @@ namespace LoginPage
         }
 
         public string haber_izin = "Onaylıyorum";
+        // Register button click event
         private void btnKayitOl_Click(object sender, EventArgs e)
         {
             if(chckboxHaberizin.Checked == true)
@@ -128,6 +135,7 @@ namespace LoginPage
 
         }
 
+        // Allow only numeric input for phone number textbox
         private void txtboxNumber_KeyPress(object sender, KeyPressEventArgs e)
         {
             if (!char.IsDigit(e.KeyChar) && e.KeyChar != '\b' && e.KeyChar != '\x03' && e.KeyChar != '\x16' && e.KeyChar != '\x18' && e.KeyChar != '-')
@@ -136,17 +144,20 @@ namespace LoginPage
             }
         }
 
+        // Check if string contains special characters
         private bool ContainsSpecialCharacters(string s)
         {
             Regex regex = new Regex("[^a-zA-Z0-9]");
             return regex.IsMatch(s);
         }
 
+        // Show tooltip for password textbox
         private void txtboxSifre_MouseHover(object sender, EventArgs e)
         {
             ttipSifreBilgiGoster.SetToolTip(txtboxSifre, "-Şifre en az 5 karakter uzunluğunda olmalı");
         }
 
+        // Constants and method declarations for moving form without border
         public const int WM_NCLBUTTONDOWN = 0xA1;
         public const int HT_CAPTION = 0x2;
         [DllImportAttribute("user32.dll")]
@@ -154,6 +165,7 @@ namespace LoginPage
         [DllImportAttribute("user32.dll")]
         public static extern bool ReleaseCapture();
 
+        // Move form without border - MouseMove event for background panel
         private void txtboxBackground_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -163,6 +175,7 @@ namespace LoginPage
             }
         }
 
+        // Move form without border - MouseMove event for "Hesap Merkezi" label
         private void lblHesapMerkezi_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -172,6 +185,7 @@ namespace LoginPage
             }
         }
 
+        // Validate password length
         private void txtboxSifre_Leave(object sender, EventArgs e)
         {
             string sifre = txtboxSifre.Text;
@@ -184,3 +198,4 @@ namespace LoginPage
         }
     }
 }
+
