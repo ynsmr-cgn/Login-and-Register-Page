@@ -1,0 +1,11 @@
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\bin\Debug\LoginPage.exe.config
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\bin\Debug\LoginPage.exe
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\bin\Debug\LoginPage.pdb
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.csproj.AssemblyReference.cache
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.formGiris.resources
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.Properties.Resources.resources
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.csproj.GenerateResource.cache
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.csproj.CoreCompileInputs.cache
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.exe
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.pdb
+D:\Software\Visual Studio 2022\LoginPage\LoginPage\obj\Debug\LoginPage.formKayit.resources
